@@ -1,0 +1,39 @@
+## arrow up
+"\e[A":history-search-backward
+## arrow down
+"\e[B":history-search-forward
+
+set show-all-if-ambiguous on
+set completion-ignore-case on
+set bell-style none
+
+# mappings for Ctrl-left-arrow and Ctrl-right-arrow for word moving
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+"\e[5C": forward-word
+"\e[5D": backward-word
+"\e\e[C": forward-word
+"\e\e[D": backward-word
+"\e[0c": forward-word
+"\e[0d": backward-word
+
+# Execute 'jobs'
+"\ej": "\C-a\C-kjobs\n"
+
+# Ajouter "| less" à la fin de la ligne
+"\el": "\C-e | less"
+
+# Ajouter "sudo" au début de la ligne
+"\ex": "\C-asudo \C-e"
+
+# Copier une seconde fois le premier argument de la commande
+# (Ne fonctionne que pour des commandes simples)
+# Pratique lorsqu'on écrit "mv nom_de\ -\ fichier_\[\ complexe\] nom_de\ -\ fichier_\[\ complexe\].txt"
+"\er": '\C-a\ef\C-k\C-y\C-y'
+
+# ouvre un dmenu avec les fichiers du dir courant
+"\ea": ' \\\'$(ls | dmenu -l 24)\\\'\e\C-e'
+
+# insère le nom du fichier le plus récemment modifié
+"\e:": '\\\'$(ls -t -1 -d * | head -n 1)\\\' \e\C-e'
+

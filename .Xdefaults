@@ -1,0 +1,59 @@
+URxvt.matcher.button:	1
+URxvt*scrollstyle:	rxvt
+
+URxvt.perl-ext-common:	default,matcher
+URxvt.urlLauncher:	/usr/bin/firefox
+URxvt.scrollBar:	off
+
+URxvt*transparent:	true
+Rxvt*shading:	30
+
+URxvt.font: xft:inconsolata:size=12
+
+URxvt.perl-ext: default,url-select,font-size
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/firefox -new-tab
+URxvt.url-select.underline: true
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
+
+*visualBell: false
+
+sterm*scrollTtyOutput:	false
+xterm*rightScrollBar:	true
+xterm*faceName:	inconsolata:pixelsize=14
+xterm*utf8:	2
+xterm*scrollBar:	true
+xterm*saveLines:	512
+xterm*geometry:	80x30
+xterm*scrollTtyKeypress:	true
+xterm*scrollTtyOutput:	true
+xterm*dynamicColors:	true
+xterm*jumpScroll:	true
+xterm*eightBitInput:	true
+xterm*multiScroll:	true
+xterm*toolBar:	false
+XTerm*selectToClipboard:	true
+Xcursor*theme:	Adwaita
+*Text.background:	#efefef
+*foreground:	#dddddd
+*background:	#111111
+*color0:	#000000
+*color1:	#ff6565
+*color2:	#93d44f
+*color3:	#eab93d
+*color4:	#204a87
+*color5:	#ce5c00
+*color6:	#89b6e2
+*color7:	#cccccc
+*color8:	#555753
+*color9:	#ff8d8d
+*color10:	#c8e7a8
+*color11:	#ffc123
+*color12:	#3465a4
+*color13:	#f57900
+*color14:	#46a4ff
+*color15:	#ffffff
+
+rxvt*modifier: alt
+urxvt*modifier: alt
